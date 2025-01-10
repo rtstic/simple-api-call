@@ -4,10 +4,7 @@ document.getElementById("locationForm").addEventListener("submit", function (eve
     const city = document.getElementById("cityInput").value.trim();
     if (!city) return;
 
-    const baseURL =
-        window.location.hostname === "127.0.0.1"
-            ? "http://localhost:3000" // Local Vercel dev URL
-            : "https://weather-middleware.vercel.app/"; // Hosted Vercel URL
+    const baseURL = 'https://weather-middleware-rtstics-projects.vercel.app'
 
     const apiUrl = `${baseURL}/getWeather?city=${city}`;
 
